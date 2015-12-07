@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+	<cn.edu.cqut.utils.HeadView
+	    android:id="@+id/add_types_head" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	</cn.edu.cqut.utils.HeadView>
+	
+	<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        >
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择标签: "
+                android:textSize="20sp"
+                android:textColor="@color/orange"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(默认其他)"
+                android:textSize="16sp"
+                android:textColor="@color/orange"
+                />
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/label_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生活方面"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:id="@+id/label_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学习方面"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:id="@+id/label_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情感方面"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/label_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气方面"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:id="@+id/label_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交通方面"
+                android:textColor="@color/black"
+                />
+            <CheckBox
+                android:id="@+id/label_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他方面"
+                android:textColor="@color/black"
+                android:checked="true"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

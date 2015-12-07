@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <cn.edu.cqut.utils.HeadView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </cn.edu.cqut.utils.HeadView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:textColor="@color/orange"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/corners_bg_white"
+                android:hint="@string/accounthit"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/account_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/clear"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/orange"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/corners_bg_white"
+                android:hint="@string/pwdhint"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/pwd_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/img_des"
+                android:src="@drawable/clear"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:id="@+id/layout_login"
+            android:layout_width="295dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loginblank"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_losepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25sp"
+                android:text="@string/losepwd"
+                android:clickable="true"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <include layout="@layout/common_title"/>
+   
+<TabHost  
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/tab_layout_guide"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="true"
+            android:paddingTop="0dp"
+            android:background="@drawable/abs__ab_share_pack_holo_dark"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/tab_layout_question"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tab_layout_textimg_question"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/question_normal" />
+
+                <TextView
+                    android:id="@+id/tab_layout_text_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_layout_textimg_question"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/question"
+                    android:textStyle="bold"
+                    android:textColor="@color/divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_layout_recommend"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tab_layout_textimg_recommend"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/recommend_normal" />
+
+                <TextView
+                    android:id="@+id/tab_layout_text_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_layout_textimg_recommend"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/recommend"
+                    android:textStyle="bold"
+                    android:textColor="@color/divider" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_layout_add"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tab_layout_textimg_add"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/add" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_layout_rank"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tab_layout_textimg_rank"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rank_normal" />
+
+                <TextView
+                    android:id="@+id/tab_layout_text_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_layout_textimg_rank"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/rank"
+                    android:textStyle="bold"
+                    android:textColor="@color/divider" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tab_layout_mine"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/tab_layout_textimg_mine"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/mine_normal" />
+
+                <TextView
+                    android:id="@+id/tab_layout_text_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_layout_textimg_mine"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/mine"
+                    android:textStyle="bold"
+                    android:textColor="@color/divider" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/tab_layout_guide" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </TabWidget>
+    </RelativeLayout>
+
+</TabHost>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/lighter_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_all_answer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#DCDCDC"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="#DCDCDC"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            >
+        <EditText
+            android:id="@+id/fast_answer"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:background="@drawable/corners_bg_white"
+            android:paddingLeft="10dp"
+            android:hint="输入您的答案"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+
+       <RelativeLayout
+           android:id="@+id/layout_commit"
+           android:layout_width="50dp"
+           android:layout_height="40dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="15dp"
+           android:background="@drawable/btn_bg"
+           android:clickable="true"
+           android:gravity="center"
+            >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center"
+                 android:text="提 交"
+                 android:textColor="@color/white"
+                 android:textSize="15sp" />
+
+        </RelativeLayout>
+           
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

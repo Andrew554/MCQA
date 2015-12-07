@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.cqut.mcqa"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+
+    <!-- ShareSdk -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="cn.edu.cqut.mcqa.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.edu.cqut.mcqa.AddQuestionActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.MineActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.QuestionActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.RankActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.RecommendActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.SearchActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.AddQuestionTypes" />
+        <activity android:name="cn.edu.cqut.mcqa.LoginActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.RegisterActivity" />
+        <activity android:name="cn.edu.cqut.mcqa.QuestionDetail" />
+        <activity android:name="cn.edu.cqut.mcqa.AnswerDetail" />
+        
+    </application>
+
+</manifest>

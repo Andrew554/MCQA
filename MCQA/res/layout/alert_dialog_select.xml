@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_bg_white"
+    android:padding="8dp"
+    >
+    <RelativeLayout 
+        android:id="@+id/dialog_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 提示标题 -->
+	    <TextView
+	        android:id="@+id/dialog_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="18dp"
+	        android:layout_marginTop="6dp"
+	        android:textIsSelectable="false"
+	        android:textColor="@color/orange"
+	        android:textSize="19sp"
+	        android:text="@string/prompt"
+	        />
+	    <!-- 分界线 -->
+	    <TextView
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+           	android:layout_marginTop="8dp"
+          	android:layout_centerHorizontal="true"
+          	android:layout_below="@id/dialog_title"
+          	android:background="@color/orange"
+             />
+	    </RelativeLayout>
+	    <!-- 提示信息 -->
+	    <TextView
+	        android:id="@+id/dialog_message" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/dialog_head"
+	        android:layout_marginLeft="18dp"
+	        android:layout_marginTop="15dp"
+	        android:textSize="19sp"
+	        android:textColor="@color/black"
+	        android:text="@string/content"
+	        />
+	    <!-- 信息确认  两个按钮 -->
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="35dp"
+	        android:layout_below="@id/dialog_message"
+	        android:layout_marginTop="19dp"
+	        >
+	        <TextView
+	            android:id="@+id/tv_confirm"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="24dp"
+	            android:textColor="@color/orange"
+	            android:text="@string/confirm"
+	            android:textSize="19sp"
+	            />
+	        <TextView 
+	            android:id="@+id/tv_cancle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="90dp"
+	            android:textColor="@color/black"
+	            android:text="@string/cancle"
+	            android:textSize="19sp"
+	            />
+	    </RelativeLayout>
+</RelativeLayout>

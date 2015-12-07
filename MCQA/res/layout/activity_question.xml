@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_tab_question"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:text="@string/app_name"
+            android:textSize="20sp" />
+        
+	<LinearLayout
+	    android:layout_width="150dp"
+	    android:layout_height="45dp"
+	    android:layout_marginTop="18dp"
+	    android:layout_centerInParent="true"
+	    android:layout_gravity="center"
+	    android:orientation="horizontal"
+	    >
+	    <TextView
+	        android:id="@+id/tv_new"
+	        android:layout_height="30dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:clickable="true"
+	        android:background="@drawable/guide_coner_bg_left"
+	        android:text="@string/new_question"
+	        android:textSize="18sp"
+	        android:textColor="@color/white"
+	        android:gravity="center"
+	        />
+	    <TextView
+	        android:id="@+id/tv_hot"
+	        android:layout_height="30dp"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/guide_coner_bg_right_normal"
+	        android:clickable="true"
+	        android:text="@string/hot_question"
+	        android:textColor="@color/white"
+	        android:textSize="18sp"
+	        android:gravity="center"
+	        />
+	</LinearLayout>
+	<!-- 搜索按钮 -->
+	<ImageView
+            android:id="@+id/img_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/img_des"
+            android:gravity="center"
+            android:src="@drawable/search"
+  		 />
+	</RelativeLayout>
+	
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/gray"
+	    android:layout_marginBottom="5dp"
+	    />
+	
+	<android.support.v4.view.ViewPager 
+        android:id="@+id/viewpager_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

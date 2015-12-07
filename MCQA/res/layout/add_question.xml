@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+	>
+
+	<cn.edu.cqut.utils.HeadView
+	    android:id="@+id/add_question_head"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	</cn.edu.cqut.utils.HeadView>
+	
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+     	android:layout_marginTop="10dp"
+     	android:layout_marginLeft="10dp"
+    	android:orientation="horizontal"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title"
+	        android:textColor="@color/orange"
+	        android:textSize="20sp"
+	        />
+	    <EditText
+	        android:id="@+id/question_title"
+	        android:layout_width="280dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:hint="@string/title"
+	        />
+    </LinearLayout>
+     <RelativeLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         >
+	    <EditText
+	        android:id="@+id/question_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="300dp"
+	        android:inputType="textMultiLine"
+	        android:hint="@string/question_content"
+	        android:gravity="top|left"
+	         />
+
+	    <RelativeLayout
+	        android:id="@+id/layout_clear"
+	        android:layout_width="60dp"
+	        android:layout_height="30dp"
+	        android:layout_alignBottom="@+id/question_content"
+	        android:layout_alignParentRight="true"
+	        android:clickable="true"
+	        android:layout_marginBottom="10dp"
+	        android:background="@drawable/corners_bg_orange" >
+
+	        <TextView
+	            android:id="@+id/tv_nums"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="@string/nums"
+	            android:textColor="@color/gray"
+	            android:textSize="18sp" />
+
+	        <ImageView
+	            android:id="@+id/im_content_clear"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/tv_nums"
+	            android:contentDescription="@string/img_des"
+	            android:src="@drawable/clear" />
+	    </RelativeLayout>
+
+	 </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:id="@+id/btn_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标签"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+
+ <!-- <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/cool"/>
+ </LinearLayout> -->
+</LinearLayout>
